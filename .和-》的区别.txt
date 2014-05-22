@@ -1,0 +1,11 @@
+﻿豆子哥，请教下
+QDialog dialog(this);
+dialog.setWindowTitle(tr(“Hello, dialog!”));
+dialog.show();还有
+QDialog *dialog = new QDialog;
+dialog->setWindowTitle(tr(“Hello, dialog!”));
+dialog->show();
+的区别，其中的.和->的用法
+
+:::
+. 运算符用于实例变量；->运算符用于指针变量。

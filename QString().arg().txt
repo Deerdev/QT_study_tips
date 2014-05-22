@@ -1,0 +1,8 @@
+﻿QString msg = QString("r: %1,g: %2,b: %3")              \
+    .arg(QString::number(color.red()),QString::number(color.green()),QString::number(color.blue()));
+
+ *QString("r: %1, g: %2, b: %3")创建了一个QString对象。我们使用了参数化字符串，也就是那些%1之类。在Java的properties文件中，
+ * 字符参数是用{0}, {1}之类实现的。其实这都是一些占位符，也就是，后面会用别的字符串替换掉这些值。占位符的替换需要使用QString的
+ * arg()函数。这个函数会返回它的调用者，因此可以使用链式调用写法。它会按照顺序替换掉占位符。然后是QString::number()函数，这也
+ * 是QString的一个static函数，作用就是把int、double等值换成QString类型。这里是把QColor的R、G、B三个值输出了出来。
+

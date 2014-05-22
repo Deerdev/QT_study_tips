@@ -1,0 +1,5 @@
+﻿请问下对话框有办法自己去设置窗口的最大化和那个问号按钮吗？那个按钮有时候没什么用啊　有办法取消那个按钮？
+
+
+
+通过设置 windowFlags() 达到目的。可以查看 Qt::WindowFlags 的文档，比如只需要最小化和关闭按钮，就设置为 Qt::WindowMinimizeButtonHint | Qt::WindowCloseButtonHint
