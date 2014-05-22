@@ -1,0 +1,6 @@
+﻿画笔也可以进行填充
+    直线是用画笔绘制的啊！这里，如果你仔细查阅了API文档就会发现，QPen是接受
+QBrush作为参数的。也就是说，你可以利用一个QBrush创建一个QPen，这样，QBrush
+所有的填充效果都可以用在画笔上了！
+    painter.setPen(QPen(QBrush(linearGradient), 5)); 
+    设置pen的颜色（填充），大小5px
